@@ -15,9 +15,9 @@ para calcular a soma e uma porta AND para calcular o carry. As Figuras 2a e 2b i
 diagrama de bloco (ou modelo caixa preta) e o esquemático de um half adder, respectivamente.
 
 <p align="left">
-  <img src="half adder block.png" width="150"/>
-
-
-<align="right">
-  <img src="half adder gate.png" width="150"/>
+  <img src="half adder block.png" width="150">
 </p>
+<p align="right">
+  <img src="half adder gate.png" width="150">
+</p>
+<br clear="both"/> <!-- Limpa o float para evitar sobreposição -->>
