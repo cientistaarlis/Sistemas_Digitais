@@ -24,15 +24,6 @@ diagrama de bloco (ou modelo caixa preta) e o esquemático de um half adder, res
 | 1           | 1           | 0          | 1             |
 
 
-## 🧠 Tabela Verdade do Half Adder
-
-| Entrada (a) | Saída (b) | Soma(sum) | Carry (carry) |
-|------------|------------|------------|---------------|
-| 0          | 0          || 0          | 0             |
-| 0          | 1          || 1          | 0             |
-| 1          | 0          || 1          | 0             |
-| 1          | 1          || 0          | 1             |
-
 
 
 ## ⚙️ Representação do Half Adder
