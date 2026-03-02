@@ -13,3 +13,12 @@ module inverter (
     assign b = ~a;
 
 endmodule
+
+
+## 💻 Código Verilog
+
+```verilog
+module inverter (
+    input  wire a,
+    output wire b
+);
