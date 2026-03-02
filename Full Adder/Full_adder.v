@@ -1,3 +1,10 @@
+// ==========================================
+// Module: Full Adder
+// Description: Soma dois bits, produzindo soma (XOR) e carry (AND).
+// Author: Dhene Arlis
+// ==========================================
+
+
 module full_adder(
     input wire a,
     input wire b,
