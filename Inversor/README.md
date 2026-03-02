@@ -9,7 +9,7 @@ Este módulo realiza a inversão de um sinal digital de entrada, produzindo a sa
 É um dos blocos fundamentais da lógica digital e base para circuitos mais complexos.
 
 ---
-##  Simbologia
+## 📊 Simbologia
 
 Representação da porta lógica NOT.
 
