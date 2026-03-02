@@ -14,7 +14,7 @@ Este módulo realiza a inversão de um sinal digital de entrada, produzindo a sa
 Representação da porta lógica NOT.
 
 <p align="center">
-  <img src="simbologia.png" width="800"/>
+  <img src="simbologia.png" width="300"/>
 </p>
 
 ---
