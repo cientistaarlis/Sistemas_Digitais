@@ -1,3 +1,11 @@
+// ==========================================
+// Module: Test Bench do Half Adder
+// Description: Testbench para o half adder. Aplica todas as combinações de entrada (00,01,10,11) e monitora as saídas sum e carry.
+// Author: Dhene Arlis
+// ==========================================
+
+## 💻 Código Verilog
+
 `timescale 1ns/1ps
 
 module tb_half_adder;
