@@ -25,6 +25,7 @@ Representação da porta lógica NOT.
 | 0          | 1        |
 | 1          | 0        |
 
+---
 
 ## ⚙️ Testbench
 
