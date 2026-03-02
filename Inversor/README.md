@@ -18,7 +18,7 @@ Representação da porta lógica NOT.
 
 ---
 
-## 🧠 Funcionamento
+## 🧠 Tabela Verdade da Porta Inversora
 
 | Entrada (a) | Saída (b) |
 |------------|----------|
