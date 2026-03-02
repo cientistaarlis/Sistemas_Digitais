@@ -1,6 +1,6 @@
 // ==========================================
 // Module: Full Adder
-// Description: Soma dois bits, produzindo soma (XOR) e carry (AND).
+// Description: Implementação de um somador completo (full adder) de 1 bit. Soma as entradas a, b e cin, gerando sum (XOR) e carry_out.
 // Author: Dhene Arlis
 // ==========================================
 
