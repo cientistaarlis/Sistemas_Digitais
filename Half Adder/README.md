@@ -16,8 +16,8 @@ diagrama de bloco (ou modelo caixa preta) e o esquemático de um half adder, res
 
 <p align="left">
   <img src="half adder block.png" width="150"/>
-</p>
 
-<p align="right">
+
+<align="right">
   <img src="half adder gate.png" width="150"/>
 </p>
