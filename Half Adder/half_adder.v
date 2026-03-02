@@ -1,3 +1,11 @@
+// ==========================================
+// Module: Half Adder
+// Description: Soma dois bits, produzindo soma (XOR) e carry (AND).
+// Author: Dhene Arlis
+// ==========================================
+
+## 💻 Código Verilog
+
 
 module half_adder(
     input wire a,
