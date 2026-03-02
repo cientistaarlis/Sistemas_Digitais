@@ -1,4 +1,13 @@
-//`include "inv.v"
+// ==========================================
+// Module: Test Bench de Inversor em Cascata
+// Description: Testbench para dois inversores ligados em série. 
+//              Aplica estímulos alternados (0 e 1) na entrada e 
+//              monitora as saídas de cada inversor (y1 e y2).
+// Author: Dhene Arlis
+// ==========================================
+
+
+`include "inv.v"
 `timescale 1ns/1ps
 
 module tb_inv;
