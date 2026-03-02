@@ -13,6 +13,19 @@ A partir da Tabela Verdade, podemos escrever as expressões booleanas de um half
 Assim, um half adder pode ser implementado com duas portas lógicas: uma porta XOR
 para calcular a soma e uma porta AND para calcular o carry. As Figuras 2a e 2b ilustram o
 diagrama de bloco (ou modelo caixa preta) e o esquemático de um half adder, respectivamente.
+
+
+## 🧠 Tabela Verdade do Half Adder
+
+| Entrada (a) | Saída (b) || Soma(sum) | Carry (carry) |
+|------------|------------||------------|---------------|
+| 0          | 0          || 0          | 0             |
+| 0          | 1          || 1          | 0             |
+| 1          | 0          || 1          | 0             |
+| 1          | 1          || 0          | 1             |
+
+
+
 ## ⚙️ Representação do Half Adder
 
 <div style="display: flex; justify-content: space-between;">
