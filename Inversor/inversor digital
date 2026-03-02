@@ -1,9 +1,15 @@
+// ==========================================
+// Module: Inverter (NOT Gate)
+// Description: Simple digital inverter
+// Author: Dhene Arlis
+// ==========================================
 
-module inv(
-    output b,
-    input a
+module inverter (
+    input  wire a,   // Input signal
+    output wire b    // Inverted output
 );
 
+    // Continuous assignment
     assign b = ~a;
 
-endmodule;
+endmodule
