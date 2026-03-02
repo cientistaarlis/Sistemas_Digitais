@@ -4,21 +4,14 @@
 // Author: Dhene Arlis
 // ==========================================
 
+## 💻 Código Verilog
+
 module inverter (
     input  wire a,   // Input signal
     output wire b    // Inverted output
 );
 
-    // Continuous assignment
     assign b = ~a;
 
 endmodule
 
-
-## 💻 Código Verilog
-
-```verilog
-module inverter (
-    input  wire a,
-    output wire b
-);
