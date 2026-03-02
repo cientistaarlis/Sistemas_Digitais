@@ -1,3 +1,10 @@
+## ⚙️ Testbench
+
+O testbench abaixo instancia o módulo `inversor` e aplica estímulos de entrada para verificar a funcionalidade do inversor: entrada alternada entre 0 e 1,
+com checagem automática da saída esperada, monitorando a saída para garantir que o circuito se comporta conforme a tabela verdade.
+    A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, ModelSim, Quartus, etc.).
+
+
 //`include "inv.v"
 `timescale 1ns/1ps
 
