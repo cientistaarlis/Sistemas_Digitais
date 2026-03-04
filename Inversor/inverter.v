@@ -6,7 +6,7 @@
 
 ## 💻 Código Verilog
 
-module inverter (
+module inv (
     input  wire a,   // Input signal
     output wire b    // Inverted output
 );
