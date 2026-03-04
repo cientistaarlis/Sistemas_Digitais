@@ -26,6 +26,10 @@ Este repositório compõe meu portfólio técnico na área de Engenharia Eletrô
 ## 🛠 Tecnologias e Ferramentas
 
 <p align="center">
+  <img src="Verilog Hardware Description Language.jpg" width="300"/>
+</p>
+
+<p align="center">
   <img src="Iverilog+GTKWave.png" width="200"/>
   <img src="Quartus.png" width="200"/>
 </p>
