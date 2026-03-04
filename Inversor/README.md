@@ -70,3 +70,9 @@ Confirmando a implementação correta da operação lógica NOT.
 
 Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
 
+## 🎥 Demonstração em Vídeo
+
+Vídeo curto demonstrando a simulação do inversor utilizando Icarus Verilog e GTKWave:
+
+🔗 [Assistir demonstração](LINK_DO_VIDEO_AQUI)
+
