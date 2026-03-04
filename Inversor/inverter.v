@@ -1,6 +1,6 @@
 // ==========================================
 // Module: Inverter (NOT Gate)
-// Description: Simple digital inverter
+// Description: Módulo Inversor (ou porta lógica NOT)
 // Author: Dhene Arlis
 // ==========================================
 
