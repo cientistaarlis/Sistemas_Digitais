@@ -71,19 +71,20 @@ Os módulos desenvolvidos servem como base para:
 
 ## 🌐 Conecte-se Comigo
 
-👨‍💻 **Dhene Arlis**
+👨‍💻 **Dhene Arlis** - Engenheiro de Hardware
 
+📍 Salvador, Bahia - Brasil  
+🔧 Skills: Verilog, FPGA, Quartus, Icarus Verilog, GTKWave  
 🔗 LinkedIn: https://www.linkedin.com/in/dhene-arlis-4273511a8/  
 💻 GitHub: https://github.com/cientistaarlis  
 🌎 Portfólio (em breve): [Seu site Google aqui]
 
 ---
 
-## 📌 Observação
+## 📌
+# 📁 Organização do Repositório
 
-## 📁 Organização do Repositório
-
-As simulações e validações funcionais estão documentadas individualmente dentro de cada subdiretório. Cada módulo contém:
+As simulações e validações funcionais estão documentadas individualmente dentro de cada subdiretório que contém:
 
 - Arquivo principal em Verilog (.v)
 - Testbench dedicado (_tb.v)
@@ -93,5 +94,6 @@ As simulações e validações funcionais estão documentadas individualmente de
 
 
 
+ ## 📌Observação
 
 Este repositório possui caráter técnico-profissional e demonstra domínio prático na modelagem de hardware digital utilizando Verilog HDL, com foco em aplicações industriais e acadêmicas avançadas.
