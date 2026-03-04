@@ -56,7 +56,7 @@ Confirmando a implementação correta da operação lógica NOT.
 ## 🧪 Simulação
 
 <p align="center">
-  <img src="simulação_inversor.png" width="700"/>
+  <img src="simulacao_inversor.png" width="700"/>
 </p>
 
 ### 📊 Análise da Simulação
