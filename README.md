@@ -81,8 +81,7 @@ Os módulos desenvolvidos servem como base para:
 
 ---
 
-## 📌
-# 📁 Organização do Repositório
+## 📁 Organização do Repositório
 
 As simulações e validações funcionais estão documentadas individualmente dentro de cada subdiretório que contém:
 
@@ -91,9 +90,7 @@ As simulações e validações funcionais estão documentadas individualmente de
 - Arquivo de simulação (.vcd)
 - Imagem de waveform
 - Documentação específica do módulo
-
-
-
+---
  ## 📌Observação
 
 Este repositório possui caráter técnico-profissional e demonstra domínio prático na modelagem de hardware digital utilizando Verilog HDL, com foco em aplicações industriais e acadêmicas avançadas.
