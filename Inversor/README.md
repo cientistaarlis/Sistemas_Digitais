@@ -49,10 +49,10 @@ vvp tb_inv.vvp
 
 # Visualizar forma de onda
 gtkwave inv.vcd
-
+```
+Confirmando a implementação correta da operação lógica NOT.
 
 ---
-
 ## 🧪 Simulação
 
 <p align="center">
@@ -67,5 +67,7 @@ A forma de onda demonstra o comportamento esperado do inversor:
 - Quando a entrada `a = 1`, a saída `b = 0`
 
 Confirmando a implementação correta da operação lógica NOT.
+
+Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
 
 Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
