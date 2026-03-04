@@ -33,3 +33,20 @@ O testbench instancia o módulo `inversor` e aplica estímulos de entrada para v
 com checagem automática da saída esperada, monitorando a saída para garantir que o circuito se comporta conforme a tabela verdade.
 
 A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, ModelSim, Quartus, etc.)
+
+---
+
+## 🚀 Simulação com Icarus Verilog e GTKWave
+
+Para simular o módulo Inversor:
+
+```bash
+# Compilar módulo + testbench
+iverilog -o tb_inv.vvp inv.v tb_inv.v
+
+# Executar simulação
+vvp tb_inv.vvp
+
+# Visualizar forma de onda
+gtkwave inv.vcd
+
