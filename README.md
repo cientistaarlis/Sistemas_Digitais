@@ -34,13 +34,6 @@ Este repositório compõe meu portfólio técnico na área de Engenharia Eletrô
 - **Icarus Verilog** – Simulação
 - **GTKWave** – Análise de formas de onda
 - **Intel Quartus Prime** – Síntese e implementação em FPGA
-
-
-
-- Verilog HDL
-- Icarus Verilog (Simulação)
-- GTKWave (Análise de formas de onda)
-- Intel Quartus Prime (Síntese e implementação FPGA)
 - Conceitos de Sistemas Digitais
 
 ---
