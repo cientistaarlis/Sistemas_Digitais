@@ -50,3 +50,22 @@ vvp tb_inv.vvp
 # Visualizar forma de onda
 gtkwave inv.vcd
 
+
+---
+
+## 🧪 Simulação
+
+<p align="center">
+  <img src="simulação_inversor.png" width="700"/>
+</p>
+
+### 📊 Análise da Simulação
+
+A forma de onda demonstra o comportamento esperado do inversor:
+
+- Quando a entrada `a = 0`, a saída `b = 1`
+- Quando a entrada `a = 1`, a saída `b = 0`
+
+Confirmando a implementação correta da operação lógica NOT.
+
+Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
