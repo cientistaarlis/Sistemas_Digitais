@@ -26,7 +26,7 @@ Este repositório compõe meu portfólio técnico na área de Engenharia Eletrô
 ## 🛠 Tecnologias e Ferramentas
 
 <p align="center">
-  <img src="Iverilog_GTKWave.png" width="200"/>
+  <img src="Iverilog+GTKWave.png" width="200"/>
   <img src="Quartus.png" width="200"/>
 </p>
 
