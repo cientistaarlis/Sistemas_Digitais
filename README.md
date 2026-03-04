@@ -33,7 +33,7 @@ Este repositório compõe meu portfólio técnico na área de Engenharia Eletrô
 - **Icarus Verilog** – Simulação
 - **GTKWave** – Análise de formas de onda
 - **Intel Quartus Prime** – Síntese e implementação em FPGA
-- **Visual Studio Code** - 
+- **Visual Studio Code** - IDE utilizado para edição estruturada dos códigos
 - Conceitos de Sistemas Digitais
 
 ---
