@@ -23,14 +23,17 @@ Este repositório compõe meu portfólio técnico na área de Engenharia Eletrô
 
 <p align="center">
   <img src="Verilog Hardware Description Language.jpg" width="200"/>
-  <img src="Iverilog+GTKWave.png" width="200"/>
+  <img src="Iverilog_GTKWave.png" width="200"/>
   <img src="Quartus.png" width="200"/>
+  <img src="Visual_studio_code.png" width="200"/>
+  
 </p>
 
 - **Verilog HDL**
 - **Icarus Verilog** – Simulação
 - **GTKWave** – Análise de formas de onda
 - **Intel Quartus Prime** – Síntese e implementação em FPGA
+- **Visual Studio Code** - 
 - Conceitos de Sistemas Digitais
 
 ---
