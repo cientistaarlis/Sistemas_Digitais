@@ -70,4 +70,3 @@ Confirmando a implementação correta da operação lógica NOT.
 
 Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
 
-Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
