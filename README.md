@@ -2,7 +2,6 @@
   <img src="Verilog Hardware Description Language.jpg" width="500"/>
 </p>
 
-# CI_DIGITAL
 
 🚀 Digital Integrated Circuits Development using **Verilog HDL**
 
@@ -25,6 +24,18 @@ Este repositório compõe meu portfólio técnico na área de Engenharia Eletrô
 ---
 
 ## 🛠 Tecnologias e Ferramentas
+
+<p align="center">
+  <img src="Iverilog_GTKWave.png" width="200"/>
+  <img src="Quartus.png" width="200"/>
+</p>
+
+- **Verilog HDL**
+- **Icarus Verilog** – Simulação
+- **GTKWave** – Análise de formas de onda
+- **Intel Quartus Prime** – Síntese e implementação em FPGA
+
+
 
 - Verilog HDL
 - Icarus Verilog (Simulação)
