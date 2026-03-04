@@ -81,7 +81,17 @@ Os módulos desenvolvidos servem como base para:
 
 ## 📌 Observação
 
-- Documentação técnica individual por módulo
-- Implementação completa de Testbenches
+## 📁 Organização do Repositório
+
+As simulações e validações funcionais estão documentadas individualmente dentro de cada subdiretório. Cada módulo contém:
+
+- Arquivo principal em Verilog (.v)
+- Testbench dedicado (_tb.v)
+- Arquivo de simulação (.vcd)
+- Imagem de waveform
+- Documentação específica do módulo
+
+
+
 
 Este repositório possui caráter técnico-profissional e demonstra domínio prático na modelagem de hardware digital utilizando Verilog HDL, com foco em aplicações industriais e acadêmicas avançadas.
