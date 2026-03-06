@@ -1,4 +1,4 @@
-### 🔁Half Adder (Somador de 1 bit)
+### 🔁 Half Adder (Somador de 1 bit)
 
 Implementação de um half adder (somador de 1 bit) em Verilog. O desenvolvimento foi feito no Visual Studio Code com a extensão TerosHDL, utilizando Icarus Verilog para compilação e simulação, e GTKWave para visualização das formas de onda.
 
