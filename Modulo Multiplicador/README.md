@@ -48,4 +48,49 @@ O testbench instancia o módulo multiplicar e aplica diversos estímulos de entr
 A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, ModelSim, Quartus, etc.)
 
 ---
+## 🚀 Simulação com Icarus Verilog e GTKWave
 
+Para simular o módulo Multiplicador:
+
+```bash
+# Compilar módulo + testbench
+iverilog -o mult.v tb_mult.v
+
+# Executar simulação
+vvp tb_mult.vvp
+
+# Visualizar forma de onda
+gtkwave tb_mult.vcd
+```
+
+---
+
+## 🧪 Simulação no Visual Studio Code
+
+<p>
+<img src="simulacao_mult_VSCode.png" width="800"/>
+</p>
+
+---
+## 🧪 Simulação no GTKWave
+
+<p>
+<img src="simulacao_mult_GTKWave.png" width="800"/>
+</p>
+
+
+## 📊 Análise da Simulação
+
+A forma de onda demonstra o comportamento esperado do multiplicador:
+y[2:0]: Sinal de entrada de 3 bits (multiplicando)
+z[2:0]: Sinal de entrada de 3 bits (multiplicador)
+saida[5:0]: Resultado da multiplicação de 6 bits
+
+Resultados observados na simulação:
+y=1, z=1 → saida=1 (1×1=1) ✓
+y=2, z=1 → saida=2 (2×1=2) ✓
+y=4, z=1 → saida=4 (4×1=4) ✓
+y=2, z=2 → saida=4 (2×2=4) ✓
+y=4, z=3 → saida=12 (4×3=12) ✓
+Confirmando a implementação correta da operação de multiplicação.
+Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
