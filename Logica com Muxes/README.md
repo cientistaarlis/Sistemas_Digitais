@@ -81,24 +81,30 @@ vvp tb_mux.vvp
 
 # Visualizar forma de onda
 gtkwave tb_mux.vcd
-
+```
 ---
+
 ## 🧪 Simulação
 
 <p align="center">
   <img src="simulacao_inversor.png" width="700"/>
 </p>
 
+---
+
 ### 📊 Análise da Simulação
 
-A forma de onda demonstra o comportamento esperado do inversor:
+A simulação confirma o comportamento esperado:
 
-- Quando a entrada `a = 0`, a saída `b = 1`
-- Quando a entrada `a = 1`, a saída `b = 0`
+• Quando f é menor que 0110, a saída depende da operação AND entre a e b.
 
-Confirmando a implementação correta da operação lógica NOT.
+• Quando f é maior ou igual e ctrl = 1, a saída é forçada para 0.
 
-Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
+• Caso contrário, a saída assume o valor da entrada c.
+
+Essa implementação demonstra controle condicional em lógica combinacional, conceito importante em projetos de FPGA e sistemas digitais.
+
+---
 
 ## 🎥 Demonstração em Vídeo
 
