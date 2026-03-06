@@ -1,4 +1,4 @@
-# 🔁 Inversor Digital em Verilog
+# 🔁 Inversor Digital
 
 Implementação de uma porta lógica inversora (NOT gate) utilizando Verilog HDL.
 
