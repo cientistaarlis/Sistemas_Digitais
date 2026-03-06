@@ -1,16 +1,14 @@
 // ==========================================
-// Módulo: mux
-//
+// Module: mux
 // Descrição:
 // Implementa uma lógica condicional que determina o valor
 // da saída com base na comparação do vetor f e no sinal
 // de controle ctrl.
-//
+
 // Lógica implementada:
 // - Se f < 4'b0110 → d = a & b
 // - Se f >= 4'b0110 e ctrl = 1 → d = 0
 // - Caso contrário → d = c
-//
 // Autor: Dhene Arlis
 // ==========================================
 
