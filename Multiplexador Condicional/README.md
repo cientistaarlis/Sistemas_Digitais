@@ -73,11 +73,11 @@ Durante a simulação:
 Para simular o módulo Inversor:
 
 ```bash
-# Compilar módulo + testbench
-iverilog -o tb_mux.vvp mux.v tb_mux.v
+# Compilar módulo + testbench (gera o .vvp)
+iverilog -o mux.vvp mux.v tb_mux.v
 
 # Executar simulação
-vvp tb_mux.vvp
+vvp mux.vvp (usa o .vvp gerado)
 
 # Visualizar forma de onda
 gtkwave tb_mux.vcd
