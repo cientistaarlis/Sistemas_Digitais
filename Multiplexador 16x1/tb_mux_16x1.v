@@ -1,3 +1,10 @@
+// ==========================================
+// Module: tb_mux_16x1
+// Description: Testbench para o multiplexador 16x1
+//              Aplica estímulos sequenciais para verificar a seleção correta.
+// Author: Dhene Arlis
+// ==========================================
+
 /* Testbench de um multiplexador 16x1 */
 
 module tb_mux_16x1;
