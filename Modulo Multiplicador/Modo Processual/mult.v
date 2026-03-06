@@ -1,3 +1,21 @@
+// ==========================================
+// Arquivo: mult2.v
+// Módulo: mult2
+// Tipo: Lógica combinacional parametrizada
+//
+// Descrição:
+// Multiplicador parametrizado implementado com bloco procedural (always). 
+// Realiza a multiplicação entre dois vetores de entrada de tamanho configurável.
+//
+// Parâmetro:
+// tamanho – define a largura dos operandos.
+//
+// Saída:
+// x – resultado da multiplicação (2 * tamanho bits).
+//
+// Autor: Dhene Arlis
+// ==========================================
+
 
 module mult2 #(parameter tamanho = 3)//definir constante, caso queira mudar o tamanho, facilita
 (	
