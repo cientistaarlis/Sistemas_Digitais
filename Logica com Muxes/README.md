@@ -87,7 +87,7 @@ gtkwave tb_mux.vcd
 ## 🧪 Simulação
 
 <p>
-  <img src="simulacao.png" width="800"/>
+  <img src="simulacao_mux.png" width="800"/>
 </p>
 
 ---
@@ -104,11 +104,5 @@ A simulação confirma o comportamento esperado:
 
 Essa implementação demonstra controle condicional em lógica combinacional, conceito importante em projetos de FPGA e sistemas digitais.
 
----
 
-## 🎥 Demonstração em Vídeo
-
-Vídeo curto demonstrando a simulação do inversor utilizando Icarus Verilog e GTKWave:
-
-🔗 [Assistir demonstração](https://youtu.be/Zb2pwTwXmS0)
 
