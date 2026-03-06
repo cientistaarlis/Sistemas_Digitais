@@ -83,7 +83,7 @@ O projeto foi criado no **Quartus Prime** e a simulação comportamental executa
 
 A imagem abaixo mostra o resultado da simulação obtido no ModelSim:
 
-<img src="simulação_mux16x1.png" width="700"/>
+<img src="simulação_mux16x1.png" width="1000"/>
 
 *Forma de onda da simulação no ModelSim.*
 
