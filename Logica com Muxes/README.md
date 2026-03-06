@@ -31,7 +31,7 @@ Esse tipo de estrutura é comum em lógica combinacional de decisão em circuito
 
 Representação do circuito implementado.
 
-<p align="center"> <img src="Mux_diagrama.png" width="450"/> </p>
+<p align="left"> <img src="Mux_diagrama.png" width="350"/> </p>
 
 ---
 
