@@ -39,9 +39,7 @@ assign saida = y * z;
 O testbench instancia o módulo multiplicar e aplica diversos estímulos de entrada para verificar a funcionalidade do multiplicador:
 
 • Testes com diferentes combinações de valores para y e z;
-
 • Verificação automática do resultado da multiplicação;
-
 • Monitoramento da saída para garantir que o circuito se comporta conforme esperado
 
 A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, ModelSim, Quartus, etc.)
