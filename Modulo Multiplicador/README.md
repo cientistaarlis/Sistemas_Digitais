@@ -1,4 +1,4 @@
-# 🔁 Inversor Digital em Verilog
+# 🔁 Multiplicador Digital
 
 Implementação de um multiplicador digital utilizando Verilog HDL com modelagem **dataflow** (atribuição contínua).
 
