@@ -1,3 +1,11 @@
+// ==========================================
+// Module: operacao
+// Description: Unidade lógica e aritmética (ULA) simples
+//              Realiza as operações: adição, subtração,
+//              OR lógico e AND lógico em vetores de tamanho parametrizável.
+// Author: Dhene Arlis
+// ==========================================
+
 module operacao #(parameter tamanho =3)
 (
     // declaração das portas 
