@@ -42,13 +42,14 @@ Para simular o módulo Inversor:
 
 ```bash
 # Compilar módulo + testbench
-iverilog -o tb_inverter.vvp inverter.v tb_inverter.v
+iverilog -o inverter.v tb_inverter.v
 
 # Executar simulação
 vvp tb_inverter.vvp
 
 # Visualizar forma de onda
 gtkwave inverter.vcd
+
 ```
 
 ---
