@@ -1,3 +1,15 @@
+// ==========================================
+// Arquivo: tb_mult.v
+// Módulo: tb_mult
+// Tipo: Testbench
+//
+// Descrição: Testbench para verificação funcional do módulo multiplicador parametrizado (mult).
+// Aplica diferentes estímulos às entradas e observa o resultado da multiplicação na saída.
+//
+// Autor: Dhene Arlis
+// ==========================================
+
+
 `timescale 1ns/10ps
 
 module tb_mult;
