@@ -89,15 +89,7 @@ Essas transições correspondem exatamente à tabela verdade.
 ---
 
 ## ⚙️ 📊 Análise dos Resultados
-A simulação demonstra que o módulo half_adder opera corretamente para todas as combinações de entrada:
-
-Quando a=0, b=0 → sum=0, carry=0
-
-Quando a=0, b=1 → sum=1, carry=0
-
-Quando a=1, b=0 → sum=1, carry=0
-
-Quando a=1, b=1 → sum=0, carry=1
+A simulação demonstra que o módulo half_adder opera corretamente para todas as combinações de entrada.
 
 As formas de onda no GTKWave (ou a saída textual do $monitor) confirmam os valores lógicos nos instantes esperados, validando o funcionamento do circuito.
 
