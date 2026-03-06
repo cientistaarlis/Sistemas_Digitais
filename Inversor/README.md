@@ -54,7 +54,7 @@ gtkwave inverter.vcd
 ---
 ## 🧪 Simulação
 
-<p align="center">
+<p >
   <img src="simulacao_inversor.png" width="700"/>
 </p>
 
