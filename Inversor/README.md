@@ -41,11 +41,11 @@ A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, 
 Para simular o módulo Inversor:
 
 ```bash
-# Compilar módulo + testbench
-iverilog -o inverter.v tb_inverter.v
+# Compilar módulo + testbench (gera o .vvp)
+iverilog -o inverter.vvp inverter.v tb_inverter.v
 
-# Executar simulação
-vvp tb_inverter.vvp
+# Executar simulação (usa o .vvp gerado)
+vvp inverter.vvp
 
 # Visualizar forma de onda
 gtkwave inverter.vcd
