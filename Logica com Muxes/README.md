@@ -87,7 +87,7 @@ gtkwave tb_mux.vcd
 ## 🧪 Simulação
 
 <p>
-  <img src="simulacao.png" width="600"/>
+  <img src="simulacao.png" width="800"/>
 </p>
 
 ---
