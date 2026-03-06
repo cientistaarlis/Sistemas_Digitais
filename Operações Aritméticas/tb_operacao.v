@@ -1,3 +1,10 @@
+// Module: tb_operacao
+// Description: Testbench para o módulo operacao (ULA simples)
+//              Verifica as operações de adição, subtração,
+//              OR lógico e AND lógico.
+// Author: Dhene Arlis
+// ==========================================
+
 `timescale 1ns/1ps
 
 module tb_operacao;
