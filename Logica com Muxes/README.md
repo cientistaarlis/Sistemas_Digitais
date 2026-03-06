@@ -66,12 +66,7 @@ Durante a simulação:
 | 4    | 1111 | 0    | 1 | 1 | 0 | 0              |
 | 5    | 0001 | 0    | 0 | 0 | 1 | 0              |
 
-
-
-
-
-
-
+---
 
 ## 🚀 Simulação com Icarus Verilog e GTKWave
 
@@ -79,15 +74,13 @@ Para simular o módulo Inversor:
 
 ```bash
 # Compilar módulo + testbench
-iverilog -o tb_inv.vvp inv.v tb_inv.v
+iverilog -o tb_mux.vvp mux.v tb_mux.v
 
 # Executar simulação
-vvp tb_inv.vvp
+vvp tb_mux.vvp
 
 # Visualizar forma de onda
-gtkwave inv.vcd
-```
-Confirmando a implementação correta da operação lógica NOT.
+gtkwave tb_mux.vcd
 
 ---
 ## 🧪 Simulação
