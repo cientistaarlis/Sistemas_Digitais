@@ -1,4 +1,4 @@
-### 🔁 Half Adder (Meio Somador) de 1 bit 
+# 🔁 Half Adder (Meio Somador) de 1 bit 
 
 Este projeto apresenta a **implementação comportamental de um meio somador** em Verilog. Inclui o módulo de design, um testbench abrangente, simulação com Icarus Verilog e análise de formas de onda usando GTKWave. O trabalho está estruturado para ser facilmente integrado em sistemas digitais maiores, como somadores completos ou unidades lógicas aritméticas.
 
