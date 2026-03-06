@@ -93,13 +93,12 @@ gtkwave tb_operacao.vcd
 ```
 ---
 
-## 🚀 Simulação com Icarus Verilog
+## 🚀 Simulação com Icarus Verilog no VSCode
 
-
+<img src="simulacao_operacao_VSCode.png" width="800"/>
 
 ---
 
 ## 🚀 Simulação com GTKWave
 
-
-
+<img src="simulacao_operacao_GTKWave.png" width="1000"/>
