@@ -53,10 +53,10 @@ A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, 
 Para simular o módulo Multiplicador:
 
 ```bash
-# Compilar módulo + testbench
-iverilog -o mult.v tb_mult.v
+# Compilar módulo + testbench (gera o .vvp)
+iverilog -o tb_mult.vvp mult.v tb_mult.v
 
-# Executar simulação
+# Executar simulação (usa o .vvp gerado)
 vvp tb_mult.vvp
 
 # Visualizar forma de onda
