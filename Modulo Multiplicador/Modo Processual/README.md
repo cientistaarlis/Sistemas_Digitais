@@ -52,13 +52,46 @@ A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, 
 
 Para simular o módulo Multiplicador:
 
-´´´ bash
+``` bash
 # Compilar módulo + testbench (gera o .vvp)
-iverilog -o tb_mult.vvp mult.v tb_mult.v
+iverilog -o mult2.vvp mult.v tb_mult2.v
 
 # Executar simulação (usa o .vvp gerado)
-vvp tb_mult.vvp
+vvp mult2.vvp
 
 # Visualizar forma de onda
-gtkwave tb_mult.vcd
+gtkwave mult2.vcd
 ```
+---
+
+## 🧪 Simulação no Visual Studio Code
+<p> 
+<img src="simulacao_mult2_VSCode.png" width="800"/> 
+</p>
+
+## 🧪 Simulação no GTKWave
+<p> 
+  <img src="simulacao_mult_GTKWave.png" width="1000"/> 
+</p>
+
+---
+
+## 📊 Análise da Simulação
+A simulação aplica os seguintes estímulos (para TAMANHO = 3 bits) conforme definido no testbench tb_mult2.v:
+
+## Tabela de simulação
+
+| Tempo (ns) | y (bin) | y (dec) | z (bin) | z (dec) | saída (bin) | saída (dec) | Operação |
+|------------|---------|---------|---------|---------|-------------|-------------|----------|
+| 0          | 000     | 0       | 000     | 0       | 000000      | 0           | 0 × 0 = 0 |
+| 5          | 001     | 1       | 001     | 1       | 000001      | 1           | 1 × 1 = 1 |
+| 15         | 010     | 2       | 001     | 1       | 000010      | 2           | 2 × 1 = 2 |
+| 25         | 100     | 4       | 001     | 1       | 000100      | 4           | 4 × 1 = 4 |
+| 35         | 010     | 2       | 010     | 2       | 000100      | 4           | 2 × 2 = 4 |
+| 45         | 100     | 4       | 011     | 3       | 001100      | 12          | 4 × 3 = 12 |
+| 60         | 010     | 2       | 011     | 3       | 000110      | 6           | 2 × 3 = 6 |
+
+---
+## Conclusão
+A simulação confirma a implementação correta da multiplicação utilizando modelagem behavioral com bloco always combinacional. O módulo é parametrizável, sintetizável e adequado para implementação em FPGA, oferecendo uma solução flexível para operações aritméticas em sistemas digitais.
+
