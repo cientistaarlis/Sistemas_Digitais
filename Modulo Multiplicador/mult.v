@@ -2,10 +2,7 @@
 // Módulo: mult
 // Tipo: Lógica combinacional parametrizada
 //
-// Descrição:
-// Módulo multiplicador parametrizado em Verilog.
-// Realiza a multiplicação entre dois vetores de
-// entrada (a e b) de tamanho configurável.
+// Descrição: Módulo multiplicador parametrizado em Verilog. Realiza a multiplicação entre dois vetores de entrada (a e b) de tamanho configurável.
 //
 // Parâmetro:
 // tamanho – define a largura dos operandos.
