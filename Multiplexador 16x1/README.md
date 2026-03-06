@@ -119,6 +119,7 @@ always @(*) begin
     endcase
 end
 
+```
 ---
 
 ## ✅ Conclusão
