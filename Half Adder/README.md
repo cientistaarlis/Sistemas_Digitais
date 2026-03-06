@@ -70,6 +70,7 @@ A saída da simulação (console e arquivo half_adder.vcd gerado) confirma o com
 # Visualizar forma de onda
 
 ```bash
+# Visualizar forma de onda
 gtkwave inverter.vcd
 ```
 
