@@ -82,19 +82,24 @@ gtkwave tb_mult.vcd
 ## 📊 Análise da Simulação
 
 A forma de onda demonstra o comportamento esperado do multiplicador:
-y[2:0]: Sinal de entrada de 3 bits (multiplicando)
 
-z[2:0]: Sinal de entrada de 3 bits (multiplicador)
+| Sinal | Descrição |
+|-------|-----------|
+| **y[2:0]** | Sinal de entrada de 3 bits (multiplicando) |
+| **z[2:0]** | Sinal de entrada de 3 bits (multiplicador) |
+| **saida[5:0]** | Resultado da multiplicação de 6 bits |
 
-saida[5:0]: Resultado da multiplicação de 6 bits
+## ✅ Resultados Observados na Simulação:
 
-Resultados observados na simulação:
+| y | z | saida | Operação | Status |
+|---|---|-------|----------|--------|
+| 1 | 1 | 1 | 1 × 1 = 1 | ✓ |
+| 2 | 1 | 2 | 2 × 1 = 2 | ✓ |
+| 4 | 1 | 4 | 4 × 1 = 4 | ✓ |
+| 2 | 2 | 4 | 2 × 2 = 4 | ✓ |
+| 4 | 3 | 12 | 4 × 3 = 12 | ✓ |
 
-• y=1, z=1 → saida=1 (1×1=1) ✓
-• y=2, z=1 → saida=2 (2×1=2) ✓
-• y=4, z=1 → saida=4 (4×1=4) ✓
-• y=2, z=2 → saida=4 (2×2=4) ✓
-• y=4, z=3 → saida=12 (4×3=12) ✓
+> **Conclusão:** A simulação confirma a implementação correta da operação de multiplicação. Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
 
 Confirmando a implementação correta da operação de multiplicação.
 Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
