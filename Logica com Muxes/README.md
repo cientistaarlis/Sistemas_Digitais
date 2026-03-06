@@ -7,11 +7,11 @@ Implementação de uma lógica de seleção utilizando Verilog HDL, combinando o
 ## 📌 Descrição
 Este módulo implementa uma lógica semelhante a um multiplexador condicional, onde a saída depende de:
 
-✅Comparação entre o valor de f e 4'b0110
+✅ Comparação entre o valor de f e 4'b0110
 
-✅Um sinal de controle ctrl
+✅ Um sinal de controle ctrl
 
-✅Entradas lógicas a, b e c
+✅ Entradas lógicas a, b e c
 
 A lógica funciona da seguinte forma:
 
@@ -35,23 +35,43 @@ Representação do circuito implementado.
 
 ---
 
-## 🧠 Tabela Verdade da Porta Inversora
-
-| Entrada (a) | Saída (b) |
-|------------|----------|
-| 0          | 1        |
-| 1          | 0        |
-
----
-
 ## ⚙️ Testbench
 
-O testbench instancia o módulo `inversor` e aplica estímulos de entrada para verificar a funcionalidade do inversor: entrada alternada entre 0 e 1,
-com checagem automática da saída esperada, monitorando a saída para garantir que o circuito se comporta conforme a tabela verdade.
+O testbench (tb_mux) foi desenvolvido para validar o comportamento do circuito através de diferentes cenários.
 
-A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, ModelSim, Quartus, etc.)
+Os testes verificam:
+
+✅ Comparação de f com 4'b0110
+
+✅ Operação lógica a & b
+
+✅ Comportamento quando ctrl = 1
+
+✅ Seleção da entrada c
+
+Durante a simulação:
+
+• $monitor acompanha os sinais em tempo real
+
+• $dumpfile e $dumpvars geram o arquivo de forma de onda .vcd
 
 ---
+## 🔬 Casos de Testes
+
+| Caso | f    | ctrl | a | b | c | Saída Esperada |
+| ---- | ---- | ---- | - | - | - | -------------- |
+| 1    | 0010 | 0    | 1 | 1 | 0 | 1              |
+| 2    | 1010 | 1    | 1 | 1 | 1 | 0              |
+| 3    | 1111 | 0    | 1 | 1 | 1 | 1              |
+| 4    | 1111 | 0    | 1 | 1 | 0 | 0              |
+| 5    | 0001 | 0    | 0 | 0 | 1 | 0              |
+
+
+
+
+
+
+
 
 ## 🚀 Simulação com Icarus Verilog e GTKWave
 
