@@ -10,8 +10,8 @@ O circuito seleciona um dos 16 bits de entrada com base em um sinal de seleção
 
 O multiplexador `mux_16x1` possui 16 entradas de dados (`entrada[15:0]`) e um seletor de 4 bits (`sel[3:0]`). A saída `saida` é igual ao bit da entrada correspondente ao valor binário do seletor. A descrição é feita de forma comportamental utilizando um bloco `always` combinacional com uma estrutura `case` que lista todas as 16 possibilidades de seleção.
 
-O módulo é totalmente sintetizável e foi implementado em dispositivo FPGA (simulado no ModelSim).
 
+O módulo é totalmente sintetizável e foi implementado em dispositivo FPGA, tendo passado pelas etapas de *Analysis & Synthesis* e *Fitter* no Quartus Prime.
 ---
 
 ## 🔌 Interface
@@ -86,6 +86,19 @@ A imagem abaixo mostra o resultado da simulação obtido no ModelSim:
 <img src="simulação_mux16x1.png" width="1000"/>
 
 *Forma de onda da simulação no ModelSim.*
+
+---
+
+## 🛠️ Síntese no Quartus Prime
+
+O módulo `mux_16x1` foi submetido ao fluxo de síntese do Quartus Prime Lite Edition. A imagem a seguir exibe a interface do Quartus após a conclusão das etapas de **Analysis & Synthesis** e **Fitter**, confirmando que o design é sintetizável e pode ser implementado em um dispositivo FPGA. O painel de *Tasks* mostra todas as etapas concluídas com sucesso, e o editor de código exibe parte do testbench utilizado (note que o testbench real utilizado é o descrito na seção anterior; a imagem serve apenas como ilustração do ambiente de desenvolvimento).
+
+<img src="mux16x1_Quartus.png" width="700"/>
+
+*Compilação e síntese bem-sucedidas no Quartus Prime.*
+
+A síntese foi realizada sem erros ou warnings críticos, gerando uma netlist compatível com a família de dispositivos alvo. Isso demonstra que o código Verilog é não apenas funcionalmente correto, mas também adequado para implementação em hardware real.
+
 
 ---
 
