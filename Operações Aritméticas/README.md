@@ -78,17 +78,7 @@ O testbench instancia o módulo `operacao` com `tamanho = 3` e aplica uma sequê
 | 60         | 011  | 010  |
 
 ---
-
-## 🚀 Simulação com Icarus Verilog
-
-
-
-## 🚀 Simulação com GTKWave
-
-
-
-
-### Compilar e simular
+## 🚀 Compilar e simular
 
 ```bash
 # Compilar os módulos e gerar o arquivo .vvp
@@ -99,3 +89,17 @@ vvp operacao.vvp
 
 # Visualizar as formas de onda com GTKWave
 gtkwave tb_operacao.vcd
+
+```
+---
+
+## 🚀 Simulação com Icarus Verilog
+
+
+
+---
+
+## 🚀 Simulação com GTKWave
+
+
+
