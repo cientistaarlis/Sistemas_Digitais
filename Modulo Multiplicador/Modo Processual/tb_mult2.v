@@ -1,6 +1,6 @@
 // ==========================================
-// Arquivo: tb_mult2.v
-// Módulo: tb_mult2
+// Arquivo: tb_mult.v
+// Módulo: tb_mult
 // Tipo: Testbench
 //
 // Descrição: Testbench utilizado para verificar o funcionamento do módulo multiplicador parametrizado (mult2). 
@@ -12,7 +12,7 @@
 
 `timescale 1ns/10ps
 
-module tb_mult2;
+module tb_mult;
     parameter TAMANHO = 3;
     reg [TAMANHO-1:0] y;
     reg [TAMANHO-1:0] z;
