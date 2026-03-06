@@ -1,60 +1,85 @@
-### 🔁 Half Adder (Somador de 1 bit)
+### 🔁 Half Adder (Meio Somador) de 1 bit 
 
-Implementação de um half adder (somador de 1 bit) em Verilog. O desenvolvimento foi feito no Visual Studio Code com a extensão TerosHDL, utilizando Icarus Verilog para compilação e simulação, e GTKWave para visualização das formas de onda.
-
-Um half adder é um circuito lógico que realiza a soma de dois bits. Ele possui duas entradas e duas saídas:
-• a e b: bits de entrada para a soma;
-• sum: representa o resultado da soma binária;
-• carry: indica o valor que deve ser levado para o próximo dígito mais significativo.
-
-A partir da Tabela Verdade, podemos escrever as expressões booleanas de um half adder da seguinte forma:
-  sum = a ⊕ b (1)
-  carry = a · b (2)
-
-Assim, um half adder pode ser implementado com duas portas lógicas: uma porta XOR
-para calcular a soma e uma porta AND para calcular o carry. 
+Este projeto apresenta a **implementação comportamental de um meio somador** em Verilog. Inclui o módulo de design, um testbench abrangente, simulação com Icarus Verilog e análise de formas de onda usando GTKWave. O trabalho está estruturado para ser facilmente integrado em sistemas digitais maiores, como somadores completos ou unidades lógicas aritméticas.
 
 ---
-## 🧠 Tabela Verdade do Half Adder
 
-| Entrada (a) | Entrada (b) | Soma (sum) | Carry (carry) |
-|-------------|-------------|------------|---------------|
-| 0           | 0           | 0          | 0             |
-| 0           | 1           | 1          | 0             |
-| 1           | 0           | 1          | 0             |
-| 1           | 1           | 0          | 1             |
+## 📖 Visão Geral
+
+Um meio somador é um circuito combinacional fundamental que soma dois números binários de um bit. Ele produz duas saídas:
+
+- **sum** – o bit menos significativo da adição.
+- **carry** – o bit que se propaga para o próximo dígito mais significativo.
+
+As expressões booleanas que regem seu funcionamento são:
+
+- `sum   = a ⊕ b`  (XOR)
+- `carry = a · b`  (AND)
+
+Estas podem ser implementadas diretamente com uma porta XOR e uma porta AND.
 
 ---
+
+## 🔢 Tabela Verdade
+
+| Entrada `a` | Entrada `b` | Saída `sum` | Saída `carry` |
+|:-----------:|:-----------:|:-----------:|:-------------:|
+| 0           | 0           | 0           | 0             |
+| 0           | 1           | 1           | 0             |
+| 1           | 0           | 1           | 0             |
+| 1           | 1           | 0           | 1             |
+
+---
+
 
 ## 🧪 Testbench (tb_half_adder)
 O testbench instancia o módulo half_adder e aplica todas as combinações possíveis de entrada (00, 01, 10, 11), com intervalo de 5 ns entre cada vetor de teste. 
 
 Estímulos aplicados
 
-Tempo (ns)	a	b	sum (esperado)	carry (esperado)
-0	0	0	0	0
-5	0	1	1	0
-10	1	0	1	0
-15	1	1	0	1
-
-
+| Tempo (ns) | a | b | sum | carry |
+|------------|---|---|-----|-------|
+| 0          | 0 | 0 | 0   | 0     |
+| 5          | 0 | 1 | 1   | 0     |
+| 10         | 1 | 0 | 1   | 0     |
+| 15         | 1 | 1 | 0   | 1     |
 
 
 ---
 
 ## 🚀 Simulação com Icarus Verilog
-A simulação foi executada no Visual Studio Code utilizando o Icarus Verilog. O comando vvp executou o arquivo compilado e gerou o arquivo half_adder.vcd com as formas de onda.
 
-<p> <img src="simulacao_half_adder_VSCode.png" width="1000"/> </p>
+O projeto foi compilado e simulado usando Icarus Verilog dentro do Visual Studio Code (com a extensão TerosHDL). A simulação produz um arquivo VCD contendo todas as transições dos sinais.
 
+```bash
+# Compilar
+iverilog -o half_adder.vvp half_adder.v tb_half_adder.v
+
+# Executar simulação
+vvp half_adder.vvp
+
+```
+A saída da simulação (console e arquivo half_adder.vcd gerado) confirma o comportamento correto.
+
+<p align="center"> <img src="simulacao_half_adder_VSCode.png" alt="Simulação no VS Code" width="800"/> <br> <em>Execução da simulação no VS Code mostrando a saída do console.</em> </p>
 
 ---
 
-## 🛠️Visualização no GTKWave
-O arquivo half_adder.vcd foi aberto no GTKWave, permitindo a análise gráfica do comportamento lógico ao longo do tempo. 
-A forma de onda confirma que as saídas sum e carry correspondem exatamente à tabela verdade.
+## 📊 Análise de Formas de Onda com GTKWave
+O arquivo VCD gerado foi aberto no GTKWave para verificar visualmente o tempo e a lógica.
 
-<p> <img src="simulacao_half_adder_GTKWave.png" width="1000"/> 
+<p align="center"> <img src="simulacao_half_adder_GTKWave.png" alt="Formas de onda no GTKWave" width="800"/> <br> <em>Visualização no GTKWave mostrando todas as combinações de entrada e as respectivas saídas.</em> </p>
+A forma de onda mostra claramente:
+
+Em 0–5 ns: a=0, b=0 → sum=0, carry=0
+
+Em 5–10 ns: a=0, b=1 → sum=1, carry=0
+
+Em 10–15 ns: a=1, b=0 → sum=1, carry=0
+
+Em 15–20 ns: a=1, b=1 → sum=0, carry=1
+
+Essas transições correspondem exatamente à tabela verdade. 
 
 ---
 
@@ -78,12 +103,12 @@ O half adder foi implementado com sucesso em Verilog, utilizando uma descrição
 
 ---
 
-## 🛠️ Ferramentas utilizadas
-Icarus Verilog – compilação e simulação
+## 🔧 Ferramentas Utilizadas
 
-Visual Studio Code + TerosHDL – edição e gerenciamento do projeto
+Icarus Verilog – compilação e simulação
 
 GTKWave – visualização de formas de onda
 
+Visual Studio Code com TerosHDL – edição e gerenciamento do projeto
 
 
