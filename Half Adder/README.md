@@ -52,10 +52,10 @@ Estímulos aplicados
 O projeto foi compilado e simulado usando Icarus Verilog dentro do Visual Studio Code (com a extensão TerosHDL). A simulação produz um arquivo VCD contendo todas as transições dos sinais.
 
 ```bash
-# Compilar
+# Compilar módulo + testbench (gera o .vvp)
 iverilog -o half_adder.vvp half_adder.v tb_half_adder.v
 
-# Executar simulação
+# Executar simulação (usa o .vvp gerado)
 vvp half_adder.vvp
 
 ```
@@ -66,6 +66,13 @@ A saída da simulação (console e arquivo half_adder.vcd gerado) confirma o com
 ---
 
 ## 📊 Análise de Formas de Onda com GTKWave
+
+# Visualizar forma de onda
+
+```bash
+gtkwave inverter.vcd
+```
+
 O arquivo VCD gerado foi aberto no GTKWave para verificar visualmente o tempo e a lógica.
 
 <p align="center"> <img src="simulacao_half_adder_GTKWave.png" alt="Formas de onda no GTKWave" width="800"/> <br> <em>Visualização no GTKWave mostrando todas as combinações de entrada e as respectivas saídas.</em> </p>
