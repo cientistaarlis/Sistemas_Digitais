@@ -1,4 +1,3 @@
-
 # 🔁 Multiplexador Condicional em Verilog
 
 Implementação de uma lógica de seleção utilizando Verilog HDL, combinando operação lógica, comparação e controle condicional.
@@ -8,32 +7,31 @@ Implementação de uma lógica de seleção utilizando Verilog HDL, combinando o
 ## 📌 Descrição
 Este módulo implementa uma lógica semelhante a um multiplexador condicional, onde a saída depende de:
 
-Comparação entre o valor de f e 4'b0110
+✅Comparação entre o valor de f e 4'b0110
 
- Um sinal de controle ctrl
+✅Um sinal de controle ctrl
 
-Entradas lógicas a, b e c
+✅Entradas lógicas a, b e c
 
 A lógica funciona da seguinte forma:
 
-Se f < 4'b0110
-→ saída d = a & b
+1. **Se `f < 4'b0110`** → `saída d = a & b`
+   → Realiza operação AND entre as entradas `a` e `b`
 
-Caso contrário, se ctrl = 1
-→ saída d = 0
+2. **Caso contrário, se `ctrl = 1`** → `saída d = 0`
+  → Força a saída para nível lógico baixo
 
-Caso contrário
-→ saída d = c
+3. **Caso contrário** → `saída d = c`
+   → Passa o valor da entrada `c` para a saída
 
 Esse tipo de estrutura é comum em lógica combinacional de decisão em circuitos digitais.
 
 ---
 ## 🔌 Diagrama Lógico
 
-Representação da porta lógica NOT.
+Representação do circuito implementado.
 
-  <img src="simbologia.png" width="150"/>
-</p>
+<p align="center"> <img src="mux_diagrama.png" width="450"/> </p>
 
 ---
 
