@@ -25,10 +25,24 @@ assign saida = y * z;
 - **Circuitos Combinacionais:** Implementação puramente combinacional, sem elementos de memória  
 - **Síntese Otimizada:** Permite que as ferramentas de síntese otimizem automaticamente a lógica Permite que as ferramentas de síntese otimizem automaticamente a lógica
 
-🔹 Vantagens para Hardware:
+ ✅ **Vantagens para Hardware**
 
-✅ Menor latência: Resposta imediata às mudanças de entrada
-✅ Código conciso: Menor complexidade e maior legibilidade
-✅ Síntese eficiente: Ferramentas EDA otimizam automaticamente a implementação
-✅ Sem clock necessário: Circuito puramente combinacional
-✅ Previsibilidade temporal: Fácil análise de timing e propagação
+- **Menor latência:** Resposta imediata às mudanças de entrada  
+- **Código conciso:** Menor complexidade e maior legibilidade  
+- **Síntese eficiente:** Ferramentas EDA otimizam automaticamente a implementação  
+- **Sem clock necessário:** Circuito puramente combinacional  
+- **Previsibilidade temporal:** Facilita análise de timing e propagação
+
+---
+
+## ⚙️ Testbench
+O testbench instancia o módulo multiplicar e aplica diversos estímulos de entrada para verificar a funcionalidade do multiplicador:
+
+• Testes com diferentes combinações de valores para y e z
+• Verificação automática do resultado da multiplicação
+• Monitoramento da saída para garantir que o circuito se comporta conforme esperado
+
+A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, ModelSim, Quartus, etc.)
+
+---
+
