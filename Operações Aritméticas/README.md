@@ -102,3 +102,8 @@ gtkwave tb_operacao.vcd
 ## 🚀 Simulação com GTKWave
 
 <img src="simulacao_operacao_GTKWave.png" width="1000"/>
+
+---
+## 📊 Análise da Simulação
+A forma de onda gerada pelo GTKWave confirma que todas as operações são atualizadas simultaneamente a cada mudança nas entradas. 
+Os resultados das operações aritméticas consideram o bit de carry/sinal, enquanto as operações lógicas atuam bit a bit.
