@@ -48,7 +48,7 @@ iverilog -o tb_inverter.vvp inverter.v tb_inverter.v
 vvp tb_inverter.vvp
 
 # Visualizar forma de onda
-gtkwave invter.vcd
+gtkwave inverter.vcd
 ```
 
 ---
@@ -77,5 +77,5 @@ Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
 
 Vídeo curto demonstrando a simulação do inversor utilizando Icarus Verilog e GTKWave:
 
-🔗 [Assistir demonstração](LINK_DO_VIDEO_AQUI)
+🔗 [Assistir demonstração](https://youtu.be/Zb2pwTwXmS0)
 
