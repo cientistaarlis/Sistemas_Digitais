@@ -18,11 +18,12 @@ Este projeto utiliza **atribuição contínua** (assign) para implementação do
 assign saida = y * z;
 
 
-🔹 Características Técnicas:
-**Atribuição Contínua (assign)**: Atualização automática da saída sempre que há mudança nas entradas
-**Modelagem Dataflow:** Descrição do fluxo de dados entre sinais, sem necessidade de blocos always
-**Circuitos Combinacionais:** Implementação puramente combinacional, sem elementos de memória
-**Síntese Otimizada:** Permite que as ferramentas de síntese otimizem automaticamente a lógica
+🔹 **Características Técnicas:**
+
+- **Atribuição Contínua (assign):** Atualização automática da saída sempre que há mudança nas entradas  
+- **Modelagem Dataflow:** Descrição do fluxo de dados entre sinais, sem necessidade de blocos `always`  
+- **Circuitos Combinacionais:** Implementação puramente combinacional, sem elementos de memória  
+- **Síntese Otimizada:** Permite que as ferramentas de síntese otimizem automaticamente a lógica Permite que as ferramentas de síntese otimizem automaticamente a lógica
 
 🔹 Vantagens para Hardware:
 ✅ Menor latência: Resposta imediata às mudanças de entrada
