@@ -100,5 +100,3 @@ A forma de onda demonstra o comportamento esperado do multiplicador:
 | 4 | 3 | 12 | 4 × 3 = 12 | ✓ |
 
 > **Conclusão:** A simulação confirma a implementação correta da operação de multiplicação. Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
-onfirmando a implementação correta da operação de multiplicação.
-Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
