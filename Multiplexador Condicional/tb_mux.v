@@ -1,3 +1,14 @@
+// ==========================================
+// Module: Testbench para MUX com Lógica Condicional
+// Description: Testbench para verificação do módulo mux.
+//              Testa diferentes cenários envolvendo:
+//              - Comparação do sinal f com 4'b0110
+//              - Operação lógica AND entre a e b
+//              - Controle de saída através do sinal ctrl
+//              - Seleção alternativa da entrada c
+// Author: Dhene Arlis
+// ==========================================
+
 `timescale 1ns/1ps
 
 module tb_mux;
