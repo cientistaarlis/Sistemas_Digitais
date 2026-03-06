@@ -1,3 +1,11 @@
+// ==========================================
+// Module: mux_16x1
+// Description: Multiplexador 16x1 comportamental
+//              Seleciona um dos 16 bits de entrada baseado no sinal de seleção.
+// Author: Dhene Arlis
+// ==========================================
+
+
 /* Descrição comportamental de um multiplexador 16x1 */
 
 module mux_16x1(
