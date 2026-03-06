@@ -36,8 +36,11 @@ Estímulos aplicados
 
 ---
 
-## 🚀 Simulação com Icarus Verilog e GTKWave
+## 🚀 Simulação com Icarus Verilog
 A simulação foi executada no Visual Studio Code utilizando o Icarus Verilog. O comando vvp executou o arquivo compilado e gerou o arquivo half_adder.vcd com as formas de onda.
+
+<p> <img src="simulacao_half_adder_VSCode.png" width="1000"/> </p>
+
 
 ---
 
@@ -45,8 +48,7 @@ A simulação foi executada no Visual Studio Code utilizando o Icarus Verilog. O
 O arquivo half_adder.vcd foi aberto no GTKWave, permitindo a análise gráfica do comportamento lógico ao longo do tempo. 
 A forma de onda confirma que as saídas sum e carry correspondem exatamente à tabela verdade.
 
-https://via.placeholder.com/800x200?text=GTKWave+Waveform+Placeholder
-(Substitua pelo caminho da imagem real, se disponível)
+<p> <img src="simulacao_half_adder_GTKWave.png" width="1000"/> 
 
 ---
 
