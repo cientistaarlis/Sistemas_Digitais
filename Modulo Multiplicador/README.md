@@ -26,6 +26,7 @@ assign saida = y * z;
 - **Síntese Otimizada:** Permite que as ferramentas de síntese otimizem automaticamente a lógica Permite que as ferramentas de síntese otimizem automaticamente a lógica
 
 🔹 Vantagens para Hardware:
+
 ✅ Menor latência: Resposta imediata às mudanças de entrada
 ✅ Código conciso: Menor complexidade e maior legibilidade
 ✅ Síntese eficiente: Ferramentas EDA otimizam automaticamente a implementação
