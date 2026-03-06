@@ -75,7 +75,7 @@ gtkwave tb_mult.vcd
 ## 🧪 Simulação no GTKWave
 
 <p>
-<img src="simulacao_mult_GTKWave.png" width="800"/>
+<img src="simulacao_mult_GTKWave.png" width="1000"/>
 </p>
 
 
