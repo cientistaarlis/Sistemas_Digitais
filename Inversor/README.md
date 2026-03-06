@@ -38,26 +38,41 @@ A simulação pode ser realizada em qualquer simulador Verilog (Icarus Verilog, 
 
 ## 🚀 Simulação com Icarus Verilog e GTKWave
 
-Para simular o módulo Multiplicador:
+Para simular o módulo Inversor:
 
 ```bash
 # Compilar módulo + testbench
-iverilog -o tb_mult.vvp mult.v tb_mult.v
+iverilog -o tb_inverter.vvp inverter.v tb_inverter.v
 
 # Executar simulação
-vvp tb_mult.vvp
+vvp tb_inverter.vvp
 
 # Visualizar forma de onda
-gtkwave tb_mult.vcd
+gtkwave invter.vcd
+
 
 ---
 ## 🧪 Simulação
 
 <p align="center">
-  <img src="simulacao_mult.png" width="700"/>
+  <img src="simulacao_inversor.png" width="700"/>
 </p>
 
 ### 📊 Análise da Simulação
 
+A forma de onda demonstra o comportamento esperado do inversor:
 
+- Quando a entrada `a = 0`, a saída `b = 1`
+- Quando a entrada `a = 1`, a saída `b = 0`
+
+Confirmando a implementação correta da operação lógica NOT.
+
+Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
+
+
+## 🎥 Demonstração em Vídeo
+
+Vídeo curto demonstrando a simulação do inversor utilizando Icarus Verilog e GTKWave:
+
+🔗 [Assistir demonstração](LINK_DO_VIDEO_AQUI)
 
