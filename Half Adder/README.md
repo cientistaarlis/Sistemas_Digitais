@@ -31,6 +31,12 @@ O testbench instancia o módulo half_adder e aplica todas as combinações poss�
 
 Estímulos aplicados
 
+Tempo (ns)	a	b	sum (esperado)	carry (esperado)
+0	0	0	0	0
+5	0	1	1	0
+10	1	0	1	0
+15	1	1	0	1
+
 
 
 
