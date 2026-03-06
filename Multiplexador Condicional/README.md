@@ -1,4 +1,4 @@
-# 🔁 Multiplexador Condicional em Verilog
+# 🔁 Multiplexador Condicional 
 
 Implementação de uma lógica de seleção utilizando Verilog HDL, combinando operação lógica, comparação e controle condicional.
 
