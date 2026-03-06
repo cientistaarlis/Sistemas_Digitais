@@ -49,7 +49,7 @@ vvp tb_inverter.vvp
 
 # Visualizar forma de onda
 gtkwave invter.vcd
-
+```
 
 ---
 ## 🧪 Simulação
@@ -57,6 +57,8 @@ gtkwave invter.vcd
 <p align="center">
   <img src="simulacao_inversor.png" width="700"/>
 </p>
+
+---
 
 ### 📊 Análise da Simulação
 
@@ -69,6 +71,7 @@ Confirmando a implementação correta da operação lógica NOT.
 
 Este módulo é totalmente sintetizável e pode ser implementado em FPGA.
 
+---
 
 ## 🎥 Demonstração em Vídeo
 
