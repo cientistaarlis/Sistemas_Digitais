@@ -87,7 +87,7 @@ gtkwave tb_mux.vcd
 ## 🧪 Simulação
 
 <p align="center">
-  <img src="simulacao_inversor.png" width="700"/>
+  <img src="simulacao.png" width="400"/>
 </p>
 
 ---
