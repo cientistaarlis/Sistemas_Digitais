@@ -6,22 +6,19 @@ O circuito soma três bits de entrada e gera os bits de soma e transporte de sa�
 ---
 
 ## 📖 Visão Geral
-📖 Visão Geral
-Um full adder (somador completo) é um circuito combinacional que realiza a soma de três bits:
 
-Entradas:
-a → primeiro bit a ser somado
+Um **full adder** (somador completo) é um circuito combinacional que realiza a soma de três bits:
 
-b → segundo bit a ser somado
+**Entradas:**  
+- `a` – primeiro bit a ser somado  
+- `b` – segundo bit a ser somado  
+- `cin` (carry-in) – bit de transporte vindo de um estágio anterior  
 
-cin (carry-in) → bit de transporte vindo de um estágio anterior
+**Saídas:**  
+- `sum` – bit menos significativo da soma  
+- `carry_out` (carry-out) – bit de transporte gerado para o próximo estágio  
 
-Saídas:
-sum → bit menos significativo da soma
-
-carry_out (carry-out) → bit de transporte gerado para o próximo estágio
-
-As expressões booleanas que descrevem o funcionamento são:
+**Expressões booleanas:**  
 
 ```text 
 sum        = a ⊕ b ⊕ cin
