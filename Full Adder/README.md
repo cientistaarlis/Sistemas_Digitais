@@ -29,7 +29,19 @@ Essas equações podem ser implementadas com portas lógicas XOR, AND e OR, conf
 
 ---
 
+
+
 ## 🔢 Tabela Verdade
+
+a   b   cin   sum   carry_out
+0   0   0     0     0
+0   0   1     1     0
+0   1   0     1     0
+0   1   1     0     1
+1   0   0     1     0
+1   0   1     0     1
+1   1   0     0     1
+1   1   1     1     1
 
 
 
