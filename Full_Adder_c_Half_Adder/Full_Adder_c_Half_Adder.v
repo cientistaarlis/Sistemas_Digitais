@@ -1,39 +1,44 @@
-`timescale 1ns/1ps
+// ======================================================
+// Module: Full Adder (using Half Adders)
+// Description: Somador completo de 1 bit implementado
+//              utilizando dois Half Adders e uma porta OR.
+//              
+//              Entradas:
+//              - a   : primeiro bit de entrada
+//              - b   : segundo bit de entrada
+//              - cin : carry de entrada
+//
+//              Saídas:
+//              - sum       : resultado da soma
+//              - carry_out : carry de saída
+//
+//              Funcionamento:
+//              1. O primeiro Half Adder soma os bits a e b.
+//              2. O segundo Half Adder soma o resultado com cin.
+//              3. O carry final é obtido pelo OR entre os dois carries.
+//
+// Author: Dhene Arlis
+// ======================================================
 
-module tb_full_adder;
-    reg a;
-    reg b;
-    reg cin;
-    wire sum;
-    wire carry_out;
+module full_adder_half(
+    input wire a,
+    input wire b,
+    input wire cin,
+    output wire sum,
+    output wire carry_out
 
-    full_adder uut (.a(a), .b(b), .cin(cin), .sum(sum), .carry_out(carry_out));
+);
 
-    initial
-    begin
-        $dumpfile("full_adder.vcd");
-        $dumpvars(0,tb_full_adder);
-        $monitor("Tempo:%2d , a:%b, b:%b, cin:%b, sum:%b, carry_out:%b",$time,a,b,cin,sum,carry_out );
+    // Fios intermediários
+    wire sum_1; 
+    wire carry_1; 
+    wire carry_2;
 
-        //Simulação de acordo com a Tabela Verdade
-        
-        a=1'b0; b=1'b0; cin=1'b0;
-        #5; 
-        a=1'b0; b=1'b0; cin=1'b1;
-        #5;
-        a=1'b0; b=1'b1; cin=1'b0;
-        #5;
-        a=1'b0; b=1'b1; cin=1'b1;
-        #5;
-        a=1'b1; b=1'b0; cin=1'b0;
-        #5;
-        a=1'b1; b=1'b0; cin=1'b1;
-        #5;
-        a=1'b1; b=1'b1; cin=1'b0;
-        #5;
-        a=1'b1; b=1'b1; cin=1'b1;
+    half_adder uut1 (.a(a), .b(b), .sum(sum_1), .carry(carry_1) );
 
-        #5; $finish;
-    end
+    half_adder uut2 (.a(sum_1), .b(cin), .sum(sum), .carry(carry_2) );
+
+
+    assign carry_out = carry_1 | carry_2;
 
 endmodule
