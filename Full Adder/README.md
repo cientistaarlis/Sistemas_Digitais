@@ -25,9 +25,9 @@ sum        = a ⊕ b ⊕ cin
 carry_out  = (a & b) | (cin & (a ⊕ b))
 ```
 
-
+```text 
 Essas equações podem ser implementadas com portas lógicas XOR, AND e OR, conforme o código Verilog apresentado.
-
+```
 ---
 
 
