@@ -1,3 +1,18 @@
+// ==========================================================
+// Testbench: tb_full_adder_half
+// Description: Testbench para verificação funcional do
+//              módulo Full Adder implementado com Half Adders.
+//
+// Objetivo: Verificar se o circuito realiza corretamente a soma de três bits (a, b e cin), gerando as saídas:
+//
+//      sum       -> resultado da soma
+//      carry_out -> carry de saída
+//
+// Metodologia: O testbench aplica todas as combinações possíveis das entradas (8 casos), simulando a tabela verdade completa do Full Adder.
+//
+// Author: Dhene Arlis
+// ==========================================================
+
 `timescale 1ns / 1ps
 
 module tb_full_adder_half;
