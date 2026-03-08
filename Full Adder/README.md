@@ -33,34 +33,34 @@ Essas equações podem ser implementadas com portas lógicas XOR, AND e OR, conf
 
 ## 🔢 Tabela Verdade
 
-a   b   cin   sum   carry_out
-0   0   0     0     0
-0   0   1     1     0
-0   1   0     1     0
-0   1   1     0     1
-1   0   0     1     0
-1   0   1     0     1
-1   1   0     0     1
-1   1   1     1     1
+| a | b | cin | sum | carry_out |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 |
 
 
 
 ## 🧪 Testbench (tb_full_adder)
 O testbench instancia o módulo full_adder e aplica **todas as oito combinações possíveis de entrada**, com intervalo de 5 ns entre cada vetor de teste. O monitor $monitor exibe os valores no console e o arquivo .vcd registra todas as transições para análise posterior.
 
-Estímulos aplicados
+## 🧪 Estímulos Aplicados no Testbench
 
-
-🧪 Estímulos Aplicados no Testbench
-Período (ns)	a	b	cin	sum	carry_out
-0–5	0	0	0	0	0
-5–10	0	0	1	1	0
-10–15	0	1	0	1	0
-15–20	0	1	1	0	1
-20–25	1	0	0	1	0
-25–30	1	0	1	0	1
-30–35	1	1	0	0	1
-35–40	1	1	1	1	1
+| Período (ns) | a | b | cin | sum | carry_out |
+|---|---|---|---|---|---|
+| 0–5 | 0 | 0 | 0 | 0 | 0 |
+| 5–10 | 0 | 0 | 1 | 1 | 0 |
+| 10–15 | 0 | 1 | 0 | 1 | 0 |
+| 15–20 | 0 | 1 | 1 | 0 | 1 |
+| 20–25 | 1 | 0 | 0 | 1 | 0 |
+| 25–30 | 1 | 0 | 1 | 0 | 1 |
+| 30–35 | 1 | 1 | 0 | 0 | 1 |
+| 35–40 | 1 | 1 | 1 | 1 | 1 |
 
 
 
