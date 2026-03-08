@@ -1,8 +1,8 @@
-# 🔁 Full Adder com Half Adders (Somador Completo Estrutural)
+# 🔁 Full Adder Estrutural com Half Adders (1 bit)
 
-Este projeto apresenta a **implementação estrutural de um somador completo (full adder) de 1 bit** utilizando **dois módulos half adder** e uma **porta OR** em Verilog. 
-Inclui o módulo de design, um testbench abrangente, simulação com Icarus Verilog e análise de formas de onda com GTKWave. 
-O circuito soma três bits de entrada e gera os bits de soma e transporte de saída, demonstrando a reutilização de componentes em projetos digitais.
+Este projeto apresenta a implementação estrutural de um somador completo (full adder) de 1 bit utilizando dois módulos half adder e uma porta OR em Verilog.
+O circuito soma três bits de entrada (a, b e cin) e produz as saídas sum e carry_out.
+A implementação demonstra o conceito de hierarquia e reutilização de módulos em projetos digitais.
 
 ---
 
@@ -23,20 +23,22 @@ Um **full adder** (somador completo) é um circuito combinacional que realiza a 
 
 Nesta versão, o full adder é construído a partir de:
 
-1. **Dois half adders** (cada um soma dois bits e gera soma e carry)
-2. **Uma porta OR** para combinar os carries intermediários
+1. **Dois half adders** - cada um realiza a soma de dois bits, gerando uma soma intermediária (sum) e um carry (carry).
+2. **Uma porta OR** para combinar os carries intermediários e prouz o carry de saída.
 
-A ligação entre os módulos segue o diagrama:
+**Conexões:**
 
-- O primeiro half adder soma `a` e `b`, produzindo `s1` (soma) e `c1` (carry).
-- O segundo half adder soma `s1` e `cin`, produzindo `sum` (soma final) e `c2` (carry).
-- A porta OR combina `c1` e `c2` para gerar `carry_out`.
+- O primeiro half adder (uut1) soma a e b, gerando sum_1 e carry_1.
+- O segundo half adder (uut2) soma sum_1 e cin, gerando sum (saída final) e carry_2.
+- A porta OR combina carry_1 e carry_2 para formar carry_out.
 
-Essa abordagem demonstra o conceito de **hierarquia e reutilização de módulos** em Verilog.
+Essa abordagem demonstra o conceito de **modularidade e reutilização de módulos** em Verilog.
 
 ---
 
 ## 🔢 Tabela Verdade
+
+A tabela verdade do full adder é a seguinte:
 
 | a | b | cin | sum | carry_out |
 |---|---|---|---|---|
@@ -101,12 +103,11 @@ A forma de onda reproduz fielmente a tabela verdade, com as transições ocorren
 ## ⚙️ Análise dos Resultados
 
 As saídas sum e carry_out para todas as combinações de entrada correspondem exatamente à tabela verdade, conforme verificado no console e nas formas de onda. 
-A simulação confirma o funcionamento correto do circuito estrutural, validando a correta interconexão dos dois half adders e da porta OR.
-
+A simulação no terminal e as formas de onda no GTKWave validam a correta interconexão dos dois half adders e da porta OR.
+A implementação estrutural demonstra a reutilização de componentes e a hierarquia de projetos em Verilog.
 
 ## ✅ Conclusão
 
-O somador completo de 1 bit foi implementado com sucesso em Verilog utilizando dois half adders e uma porta OR, demonstrando na prática o conceito de hierarquia e reutilização de módulos. 
-A simulação com Icarus Verilog e a visualização no GTKWave comprovam que o circuito atende à tabela verdade esperada. Este módulo pode ser facilmente integrado em projetos maiores, como somadores de múltiplos bits, reforçando a importância da modularização no projeto de sistemas digitais.
+O full adder de 1 bit foi implementado com sucesso utilizando dois half adders e uma porta OR. A simulação com Icarus Verilog e a visualização no GTKWave comprovam o funcionamento lógico esperado. Este exercício reforça a importância da modularidade e da validação de circuitos digitais, permitindo a construção de sistemas mais complexos a partir de blocos básicos.
 
 
