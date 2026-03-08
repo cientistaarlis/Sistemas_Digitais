@@ -5,6 +5,21 @@ O circuito soma três bits de entrada e gera os bits de soma e transporte de sa�
 
 ---
 
+## 🔢 Tabela Verdade
+
+| a | b | cin | sum | carry_out |
+|---|---|---|---|---|
+| 0 | 0 | 0 | 0 | 0 |
+| 0 | 0 | 1 | 1 | 0 |
+| 0 | 1 | 0 | 1 | 0 |
+| 0 | 1 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 1 | 0 |
+| 1 | 0 | 1 | 0 | 1 |
+| 1 | 1 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 |
+
+---
+
 ## 📖 Visão Geral
 
 Um **full adder** (somador completo) é um circuito combinacional que realiza a soma de três bits:
@@ -30,23 +45,6 @@ Essas equações podem ser implementadas com portas lógicas XOR, AND e OR, conf
 ```
 ---
 
-
-
-## 🔢 Tabela Verdade
-
-| a | b | cin | sum | carry_out |
-|---|---|---|---|---|
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 0 | 1 | 1 | 0 |
-| 0 | 1 | 0 | 1 | 0 |
-| 0 | 1 | 1 | 0 | 1 |
-| 1 | 0 | 0 | 1 | 0 |
-| 1 | 0 | 1 | 0 | 1 |
-| 1 | 1 | 0 | 0 | 1 |
-| 1 | 1 | 1 | 1 | 1 |
-
-
-
 ## 🧪 Testbench (tb_full_adder)
 O testbench instancia o módulo full_adder e aplica **todas as oito combinações possíveis de entrada**, com intervalo de 5 ns entre cada vetor de teste. O monitor $monitor exibe os valores no console e o arquivo .vcd registra todas as transições para análise posterior.
 
@@ -62,8 +60,6 @@ O testbench instancia o módulo full_adder e aplica **todas as oito combinaçõe
 | 25–30 | 1 | 0 | 1 | 0 | 1 |
 | 30–35 | 1 | 1 | 0 | 0 | 1 |
 | 35–40 | 1 | 1 | 1 | 1 | 1 |
-
-
 
 ---
 
