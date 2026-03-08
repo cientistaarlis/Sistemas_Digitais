@@ -6,12 +6,12 @@ O circuito soma três bits de entrada e gera os bits de soma e transporte de sa�
 ---
 
 ## 📖 Visão Geral
+📖 Visão Geral
 Um full adder (somador completo) é um circuito combinacional que realiza a soma de três bits:
 
 a e b – os bits a serem somados
 
-cin (carry‑in) – o transporte de entrada vindo de um estágio anterior
-
+cin (carry-in) – o transporte de entrada vindo de um estágio anterior
 
 Ele produz duas saídas:
 
@@ -23,7 +23,6 @@ As expressões booleanas que descrevem o funcionamento são:
 
 sum        = a ⊕ b ⊕ cin
 carry_out  = (a & b) | (cin & (a ⊕ b))
-
 
 Essas equações podem ser implementadas com portas lógicas XOR, AND e OR, conforme o código Verilog apresentado.
 
