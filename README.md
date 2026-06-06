@@ -1,5 +1,5 @@
 
-🚀 Digital Integrated Circuits Development using **Verilog HDL**
+# 🚀 Digital Integrated Circuits Development using **Verilog HDL**
 
 Repositório voltado ao desenvolvimento e modelagem de circuitos digitais com foco em aplicações industriais, FPGA e sistemas embarcados.
 
